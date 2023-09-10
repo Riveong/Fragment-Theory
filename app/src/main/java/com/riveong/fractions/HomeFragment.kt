@@ -25,7 +25,22 @@ class HomeFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        TODO("Not yet implemented")
+
+        if (v?.id == R.id.gateFragment){
+
+            val blankFragment = BlankFragment()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(R.id.home_layout, blankFragment,BlankFragment::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+
+        }
+
+
+
+
+        }
     }
 
 

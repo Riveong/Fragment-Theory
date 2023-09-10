@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("MyFlexibleFragment", "Fragment Name:"+ HomeFragment::class.java.simpleName)
             fragmentManager
                 .beginTransaction()
-                .add(R.id.home, homeFragment, HomeFragment::class.java.simpleName)
+                .add(R.id.home_layout, homeFragment, HomeFragment::class.java.simpleName)
                 .commit()
 
         }
